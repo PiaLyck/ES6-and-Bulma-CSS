@@ -1,4 +1,6 @@
 import _ from 'lodash';
+import 'bulma';
+
 function component() {
     var element = document.createElement('div');
   
