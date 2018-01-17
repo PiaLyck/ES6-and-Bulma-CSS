@@ -116,6 +116,13 @@ function component() {
   `;
   console.log(longPoem);
 
+  /*** SPREAD ATTRIBUTES ***/
+  //Spread attributes converts a list of elements to an array and vice versa.
+  let arr = [10, 20, 60];
+  // Math.max returns the maximum element and does not support an array as parameter,
+  // so by using the spread attribute, we convert it to a list of elements instead
+  console.log(Math.max(...arr)); // displays 60
+
   return element;
 }
 
