@@ -79,11 +79,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 function component() {
   var element = document.createElement('div');
 
-  // Lodash, currently included via a script, is required for this line to work
-  /* element.innerHTML = _.join(['Hello', 'webpack'], ' ');
-    element.classList.add('hello');
-   */
-
   // error handling with throw/try/catch
   // array manipulation with push/map/reduce/filter
   // string manipulation methods like replace/slice/split
