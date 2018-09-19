@@ -4,7 +4,7 @@ import './style.sass';
 function component() {
   var element = document.createElement('div');
 
-  // error handling with throw/try/catch
+  // error handling with throw and try/catch
   // array manipulation with push/map/reduce/filter
   // string manipulation methods like replace/slice/split
 
@@ -38,7 +38,7 @@ function component() {
 
   /*** SPREAD ATTRIBUTES ***/
   //Spread attributes converts a list of elements to an array and vice versa.
-  let arr = [10, 20, 60];
+  let arr = [10, 20, 60, 11, 45];
   // Math.max returns the maximum element and does not support an array as parameter,
   // so by using the spread attribute, we convert it to a list of elements instead
   console.log(Math.max(...arr)); // displays 60
