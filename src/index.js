@@ -34,8 +34,7 @@ function component() {
   //let is the new var. const is single-assignment
   function f() {
     {
-      let x;
-      {
+      let x; {
         // okay, block scoped name
         const x = "sneaky";
         // error, const
@@ -47,6 +46,16 @@ function component() {
   }
 
   /*** Object oriented programming (OOP) ***/
+
+  /* Literal dog */
+  var dog = { // declaration AND instantiation
+    eyeColor: "brown", // object property
+    speak: function () { // object method
+      return this.eyeColor + ' is my eye color';
+    }
+  };
+  console.log(dog.eyeColor);
+  console.log(dog.speak());
 
   /*** DEFAULT PARAMETERS ***/
   //In ES6, we can put the default values right in the signature of the functions: 

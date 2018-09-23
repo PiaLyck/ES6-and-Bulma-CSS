@@ -95,7 +95,6 @@ function component() {
   // HTTP APIs - use XMLHttpRequest or fetch
 
   // Lexical this
-  // Lexical this
   var bob = {
     _name: "Bob",
     _friends: ['Anne', 'Tim'],
@@ -104,7 +103,35 @@ function component() {
         console.log(this._name + " knows " + f));
     }
   }
+
   bob.printFriends();
+
+  //let is the new var. const is single-assignment
+  function f() {
+    {
+      let x; {
+        // okay, block scoped name
+        const x = "sneaky";
+        // error, const
+        x = "foo";
+      }
+      // error, already declared in block
+      let x = "inner";
+    }
+  }
+
+  /*** Object oriented programming (OOP) ***/
+
+  /* Literal dog */
+  var dog = { // declaration AND instantiation
+    eyeColor: "brown", // object property
+    speak: function () { // object method
+      return this.eyeColor + 'is my eye color';
+    }
+  };
+  console.log(dog.eyeColor);
+  console.log(dog.speak());
+
   /*** DEFAULT PARAMETERS ***/
   //In ES6, we can put the default values right in the signature of the functions: 
   var link = function (height = 50, color = 'red', url = 'http://azat.co') {}
